@@ -1,0 +1,80 @@
+      div:focus, span:focus {
+          outline: none;
+      }
+
+      .caretB, .caretA {
+        position: relative;
+      }
+
+      .caretB:before {
+        content: ' ';
+        position: absolute;
+        font-size: 110%;
+        margin-left: 0px;  
+        margin-top: -2px;
+        border-left: 1px solid black;
+        -webkit-animation: 1s blink step-end infinite;
+        -moz-animation: 1s blink step-end infinite;
+        -ms-animation: 1s blink step-end infinite;
+        -o-animation: 1s blink step-end infinite;
+        animation: 1s blink step-end infinite;
+      }
+
+      .caretA:after {
+      content: ' ';
+        position: absolute;
+        font-size: 110%;
+        margin-left: -1px;
+        margin-top: -2px;
+        border-left: 1px solid black;
+        -webkit-animation: 1s blink step-end infinite;
+        -moz-animation: 1s blink step-end infinite;
+        -ms-animation: 1s blink step-end infinite;
+        -o-animation: 1s blink step-end infinite;
+        animation: 1s blink step-end infinite;
+      }
+
+      @keyframes blink {
+      from, to {
+          border-color: black;
+        }
+        50% {
+          border-color: transparent;
+        }
+      }
+
+      @-moz-keyframes blink {
+      from, to {
+          border-color: black;
+        }
+        50% {
+          border-color: transparent;
+        }
+      }
+
+      @-webkit-keyframes blink {
+      from, to {
+          border-color: black;
+        }
+        50% {
+          border-color: transparent;
+        }
+      }
+
+      @-ms-keyframes blink {
+      from, to {
+          border-color: black;
+        }
+        50% {
+          border-color: transparent;
+        }
+      }
+
+      @-o-keyframes blink {
+      from, to {
+          border-color: black;
+        }
+        50% {
+          border-color: transparent;
+        }
+      }
